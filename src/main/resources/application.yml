@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      database: configuration
+      uri: mongodb://mongo-service:27017/configuration
+
+configuration:
+  reader:
+    mongo:
+      enabled: true
+      refreshTimerIntervalInMs: 10000
+
+application:
+  name: ty-client
